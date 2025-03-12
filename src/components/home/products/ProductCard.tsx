@@ -22,11 +22,11 @@ function ProductCard({ images, name, description, price, slug, stock }: Props) {
           height={0}
           sizes="100vw"
           priority
-          className="w-full h-52 object-cover rounded-lg"
+          className="w-full h-40 lg:h-52 object-cover rounded-lg"
         />
       </Link>
       <h3 className="font-semibold mt-4 mb-2">{name}</h3>
-      <p className="text-sm line-clamp-3 mb-3">{description}</p>
+      <p className="text-xs md:text-sm line-clamp-3 mb-3">{description}</p>
       {stock > 0 ? (
         <span className="text-sm">
           Price: <span className="text-emerald-500">${price}</span>
@@ -34,7 +34,10 @@ function ProductCard({ images, name, description, price, slug, stock }: Props) {
       ) : (
         <p className="text-rose-500">Out of Stock</p>
       )}
-      <Button variant="secondary" className="block w-full mt-3 hover:cursor-pointer">
+      <Button
+        variant="secondary"
+        className="block w-full mt-3 hover:cursor-pointer"
+      >
         Add to Cart
       </Button>
     </article>

@@ -7,7 +7,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="mb-12">
-      <MainWrapper className="text-sm flex items-center justify-between border-t-2 pt-10">
+      <MainWrapper className="text-sm flex flex-col items-center md:flex-row md:justify-between gap-y-6 border-t-2 pt-10">
         <div className="">
           {currentYear} Sneakers - &copy; All rights reserved
         </div>

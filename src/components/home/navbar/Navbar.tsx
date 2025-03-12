@@ -26,7 +26,7 @@ function Navbar() {
           {user ? (
             <Profile />
           ) : (
-            <div className="flex items-center gap-x-4">
+            <div className="hidden lg:flex items-center gap-x-4">
               <Button asChild>
                 <Link href="/auth/sign-in">Login</Link>
               </Button>
